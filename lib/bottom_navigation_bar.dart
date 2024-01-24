@@ -14,8 +14,10 @@ class _BottomNavigationBarExampleState extends State<BottomNavigationBarApp> {
       TextStyle(fontSize: 30, fontWeight: FontWeight.bold, color: Colors.black);
   static const List<Widget> _widgetOptions = <Widget>[
     Text('Index 0: Home', style: optionStyle),
-    Text('Index 1: Business', style: optionStyle),
-    Text('Index 2: School', style: optionStyle),
+    Text('Index 1: Category', style: optionStyle),
+    Text('Index 2: Stores', style: optionStyle),
+    Text('Index 3: Cart', style: optionStyle),
+    Text('Index 4: Profile', style: optionStyle),
   ];
 
   void _onItemTapped(int index) {
@@ -46,16 +48,25 @@ class _BottomNavigationBarExampleState extends State<BottomNavigationBarApp> {
             label: 'Home',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.business),
-            label: 'Business',
+            icon: Icon(Icons.search),
+            label: 'Category',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.school),
-            label: 'School',
+            icon: Icon(Icons.shop),
+            label: 'Stores',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.shopping_cart),
+            label: 'Cart',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.person),
+            label: 'Profile',
           ),
         ],
         currentIndex: _selectedIndex,
-        selectedItemColor: Colors.amber[800],
+        selectedItemColor: Color.fromARGB(255, 117, 27, 244),
+        unselectedItemColor: const Color.fromARGB(255, 200, 92, 9),
         onTap: _onItemTapped,
       ),
     );
