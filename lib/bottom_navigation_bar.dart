@@ -20,12 +20,6 @@ class _BottomNavigationBarExampleState extends State<BottomNavigationBarApp> {
     Text('Index 4: Profile', style: optionStyle),
   ];
 
-  // void _onItemTapped(int index) {
-  //   setState(() {
-  //     _selectedIndex = index;
-  //   });
-  // }
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -67,7 +61,7 @@ class _BottomNavigationBarExampleState extends State<BottomNavigationBarApp> {
         currentIndex: _selectedIndex,
         selectedItemColor: const Color.fromARGB(255, 117, 27, 244),
         unselectedItemColor: const Color.fromARGB(255, 200, 92, 9),
-        // onTap: _onItemTapped,
+        type: BottomNavigationBarType.fixed,
         onTap: _onItemTapped,
       ),
     );
