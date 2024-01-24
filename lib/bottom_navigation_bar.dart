@@ -62,6 +62,7 @@ class _BottomNavigationBarExampleState extends State<BottomNavigationBarApp> {
         selectedItemColor: const Color.fromARGB(255, 117, 27, 244),
         unselectedItemColor: const Color.fromARGB(255, 200, 92, 9),
         type: BottomNavigationBarType.fixed,
+        selectedLabelStyle: optionStyle.copyWith(fontWeight: FontWeight.w100),
         onTap: _onItemTapped,
       ),
     );
