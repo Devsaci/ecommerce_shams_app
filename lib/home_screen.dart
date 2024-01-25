@@ -8,14 +8,17 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        elevation: 0,
-        backgroundColor: Colors.white,
-        title: const CupertinoSearchTextField(),
-      ),
-      body: const Center(
-        child: Text("ecommerce  Shams", style: optionStyle),
+    return DefaultTabController(
+      length: 3,
+      child: Scaffold(
+        appBar: AppBar(
+          elevation: 0,
+          backgroundColor: Colors.white,
+          title: const CupertinoSearchTextField(),
+        ),
+        body: const Center(
+          child: Text("ecommerce  Shams", style: optionStyle),
+        ),
       ),
     );
   }
