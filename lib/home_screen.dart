@@ -18,8 +18,8 @@ class HomeScreen extends StatelessWidget {
           bottom: const TabBar(
             tabs: [
               RepeatedTab(optionStyle: optionStyle, label: 'Men'),
-              Tab(child: Text('Women', style: optionStyle)),
-              Tab(child: Text('Shoes', style: optionStyle)),
+              RepeatedTab(optionStyle: optionStyle, label: 'Women'),
+              RepeatedTab(optionStyle: optionStyle, label: 'Shoes'),
             ],
           ),
         ),
@@ -47,6 +47,6 @@ class RepeatedTab extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Tab(child: Text('Men', style: optionStyle));
+    return Tab(child: Text(label, style: optionStyle));
   }
 }
