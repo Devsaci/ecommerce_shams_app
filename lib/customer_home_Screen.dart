@@ -1,14 +1,13 @@
 import 'package:flutter/material.dart';
 
-class BottomNavigationBarApp extends StatefulWidget {
-  const BottomNavigationBarApp({super.key});
+class CustomerHomeScreen extends StatefulWidget {
+  const CustomerHomeScreen({super.key});
 
   @override
-  State<BottomNavigationBarApp> createState() =>
-      _BottomNavigationBarExampleState();
+  State<CustomerHomeScreen> createState() => _CustomerHomzscreenState();
 }
 
-class _BottomNavigationBarExampleState extends State<BottomNavigationBarApp> {
+class _CustomerHomzscreenState extends State<CustomerHomeScreen> {
   int _selectedIndex = 0;
   static const TextStyle optionStyle =
       TextStyle(fontSize: 30, fontWeight: FontWeight.bold, color: Colors.black);

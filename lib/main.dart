@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'bottom_navigation_bar.dart';
+import 'customer_home_Screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -19,6 +19,6 @@ class MyApp extends StatelessWidget {
           useMaterial3: true,
         ),
         //home: const CustomeHomeScreen(),
-        home: const BottomNavigationBarApp());
+        home: const CustomerHomeScreen());
   }
 }
