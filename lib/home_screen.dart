@@ -15,8 +15,12 @@ class HomeScreen extends StatelessWidget {
           elevation: 0,
           backgroundColor: Colors.white,
           title: const CupertinoSearchTextField(),
-          bottom: TabBar(
-            tabs: [],
+          bottom: const TabBar(
+            tabs: [
+              Tab(child: Text('Men', style: optionStyle)),
+              Tab(child: Text('Men', style: optionStyle)),
+              Tab(child: Text('Men', style: optionStyle)),
+            ],
           ),
         ),
         body: const Center(
