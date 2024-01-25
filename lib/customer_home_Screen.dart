@@ -1,3 +1,4 @@
+import 'package:ecommerce_shams_app/home_screen.dart';
 import 'package:flutter/material.dart';
 
 class CustomerHomeScreen extends StatefulWidget {
@@ -10,9 +11,9 @@ class CustomerHomeScreen extends StatefulWidget {
 class _CustomerHomzscreenState extends State<CustomerHomeScreen> {
   int _selectedIndex = 0;
   static const TextStyle optionStyle =
-      TextStyle(fontSize: 30, fontWeight: FontWeight.bold, color: Colors.black);
+      TextStyle(fontSize: 20, fontWeight: FontWeight.bold, color: Colors.black);
   static const List<Widget> _widgetOptions = <Widget>[
-    Text('Index 0: Home', style: optionStyle),
+    HomeScreen(),
     Text('Index 1: Category', style: optionStyle),
     Text('Index 2: Stores', style: optionStyle),
     Text('Index 3: Cart', style: optionStyle),
