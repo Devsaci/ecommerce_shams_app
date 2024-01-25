@@ -23,15 +23,15 @@ class _CustomerHomzscreenState extends State<CustomerHomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        backgroundColor: Colors.black,
-        title: Center(
-          child: Text(
-            'Ecommerce App Shams',
-            style: optionStyle.copyWith(color: Colors.white),
-          ),
-        ),
-      ),
+      // appBar: AppBar(
+      //   backgroundColor: Colors.black,
+      //   title: Center(
+      //     child: Text(
+      //       'Ecommerce App Shams',
+      //       style: optionStyle.copyWith(color: Colors.white),
+      //     ),
+      //   ),
+      // ),
       body: Center(
         child: _widgetOptions.elementAt(_selectedIndex),
       ),
