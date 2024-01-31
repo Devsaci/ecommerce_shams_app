@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 import 'minor_screens/search.dart';
@@ -36,12 +35,12 @@ class HomeScreen extends StatelessWidget {
                   const Row(
                     children: [
                       Padding(
-                        padding: EdgeInsets.symmetric(horizontal: 10),
+                        padding: EdgeInsets.symmetric(horizontal: 5),
                         child: Icon(Icons.search, color: Colors.grey),
                       ),
                       Text(
                         'What are you looking for?',
-                        style: TextStyle(color: Colors.grey, fontSize: 18),
+                        style: TextStyle(color: Colors.grey, fontSize: 14),
                       ),
                     ],
                   ),
@@ -69,6 +68,7 @@ class HomeScreen extends StatelessWidget {
               RepeatedTab(label: 'Men'),
               RepeatedTab(label: 'Women'),
               RepeatedTab(label: 'Shoes'),
+              RepeatedTab(label: 'Bags'),
               RepeatedTab(label: 'Electronics'),
               RepeatedTab(label: 'Accessories'),
               RepeatedTab(label: 'Home & Garden'),
@@ -79,15 +79,87 @@ class HomeScreen extends StatelessWidget {
         ),
         body: const TabBarView(
           children: [
-            Center(child: Text('men screen')),
-            Center(child: Text('women screen')),
-            Center(child: Text('shoes screen')),
-            Center(child: Text('bags screen')),
-            Center(child: Text('electronics screen')),
-            Center(child: Text('accessories screen')),
-            Center(child: Text('home and garden screen')),
-            Center(child: Text('kids screen')),
-            Center(child: Text('beauty screen')),
+            Center(
+                child: Text(
+              'men screen',
+              style: TextStyle(
+                fontSize: 18,
+                fontWeight: FontWeight.bold,
+                color: Colors.black,
+              ),
+            )),
+            Center(
+                child: Text(
+              'women screen',
+              style: TextStyle(
+                fontSize: 18,
+                fontWeight: FontWeight.bold,
+                color: Colors.black,
+              ),
+            )),
+            Center(
+                child: Text(
+              'shoes screen',
+              style: TextStyle(
+                fontSize: 18,
+                fontWeight: FontWeight.bold,
+                color: Colors.black,
+              ),
+            )),
+            Center(
+                child: Text(
+              'bags screen',
+              style: TextStyle(
+                fontSize: 18,
+                fontWeight: FontWeight.bold,
+                color: Colors.black,
+              ),
+            )),
+            Center(
+                child: Text(
+              'electronics screen',
+              style: TextStyle(
+                fontSize: 18,
+                fontWeight: FontWeight.bold,
+                color: Colors.black,
+              ),
+            )),
+            Center(
+                child: Text(
+              'accessories screen',
+              style: TextStyle(
+                fontSize: 18,
+                fontWeight: FontWeight.bold,
+                color: Colors.black,
+              ),
+            )),
+            Center(
+                child: Text(
+              'home and garden screen',
+              style: TextStyle(
+                fontSize: 18,
+                fontWeight: FontWeight.bold,
+                color: Colors.black,
+              ),
+            )),
+            Center(
+                child: Text(
+              'kids screen',
+              style: TextStyle(
+                fontSize: 18,
+                fontWeight: FontWeight.bold,
+                color: Colors.black,
+              ),
+            )),
+            Center(
+                child: Text(
+              'beauty screen',
+              style: TextStyle(
+                fontSize: 18,
+                fontWeight: FontWeight.bold,
+                color: Colors.black,
+              ),
+            )),
           ],
         ),
       ),
@@ -111,7 +183,7 @@ class RepeatedTab extends StatelessWidget {
       child: Text(
         label,
         style: const TextStyle(
-          fontSize: 15,
+          fontSize: 18,
           fontWeight: FontWeight.bold,
           color: Colors.black,
         ),
