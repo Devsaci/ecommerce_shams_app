@@ -14,7 +14,9 @@ class HomeScreen extends StatelessWidget {
         appBar: AppBar(
           elevation: 0,
           backgroundColor: Colors.white,
-          title: Container(),
+          title: Container(
+            decoration: const BoxDecoration(),
+          ),
           bottom: TabBar(
             isScrollable: true,
             indicatorColor: Colors.yellow[600],
