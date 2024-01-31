@@ -16,6 +16,7 @@ class HomeScreen extends StatelessWidget {
           backgroundColor: Colors.white,
           title: const CupertinoSearchTextField(),
           bottom: const TabBar(
+            isScrollable: true,
             tabs: [
               RepeatedTab(label: 'Men'),
               RepeatedTab(label: 'Women'),
