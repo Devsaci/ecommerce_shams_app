@@ -25,7 +25,10 @@ class HomeScreen extends StatelessWidget {
               children: [
                 const Row(
                   children: [
-                    Icon(Icons.search, color: Colors.grey),
+                    Padding(
+                      padding: EdgeInsets.symmetric(horizontal: 10),
+                      child: Icon(Icons.search, color: Colors.grey),
+                    ),
                     Text(
                       'What are you looking for?',
                       style: TextStyle(color: Colors.grey, fontSize: 18),
