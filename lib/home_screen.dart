@@ -21,6 +21,7 @@ class HomeScreen extends StatelessWidget {
               borderRadius: BorderRadius.circular(25),
             ),
             child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 const Icon(Icons.search, color: Colors.grey),
                 const Text(
