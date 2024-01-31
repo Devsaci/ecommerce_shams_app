@@ -17,9 +17,9 @@ class HomeScreen extends StatelessWidget {
           title: const CupertinoSearchTextField(),
           bottom: const TabBar(
             tabs: [
-              RepeatedTab(optionStyle: optionStyle, label: 'Men'),
-              RepeatedTab(optionStyle: optionStyle, label: 'Women'),
-              RepeatedTab(optionStyle: optionStyle, label: 'Shoes'),
+              RepeatedTab(label: 'Men'),
+              RepeatedTab(label: 'Women'),
+              RepeatedTab(label: 'Shoes'),
             ],
           ),
         ),
@@ -37,16 +37,23 @@ class HomeScreen extends StatelessWidget {
 
 class RepeatedTab extends StatelessWidget {
   final String label;
+
   const RepeatedTab({
     super.key,
-    required this.optionStyle,
     required this.label,
   });
 
-  final TextStyle optionStyle;
-
   @override
   Widget build(BuildContext context) {
-    return Tab(child: Text(label, style: optionStyle));
+    return Tab(
+      child: Text(
+        label,
+        style: const TextStyle(
+          fontSize: 15,
+          fontWeight: FontWeight.bold,
+          color: Colors.black,
+        ),
+      ),
+    );
   }
 }
