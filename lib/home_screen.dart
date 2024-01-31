@@ -26,11 +26,11 @@ class HomeScreen extends StatelessWidget {
                 const Row(
                   children: [
                     Icon(Icons.search, color: Colors.grey),
+                    Text(
+                      'What are you looking for?',
+                      style: TextStyle(color: Colors.grey, fontSize: 18),
+                    ),
                   ],
-                ),
-                const Text(
-                  'What are you looking for?',
-                  style: TextStyle(color: Colors.grey, fontSize: 18),
                 ),
                 Container(
                   height: 32,
