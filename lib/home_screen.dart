@@ -20,12 +20,25 @@ class HomeScreen extends StatelessWidget {
               border: Border.all(color: Colors.yellow, width: 1.5),
               borderRadius: BorderRadius.circular(25),
             ),
-            child: const Row(
+            child: Row(
               children: [
-                Icon(Icons.search, color: Colors.grey),
-                Text(
+                const Icon(Icons.search, color: Colors.grey),
+                const Text(
                   'What are you looking for?',
                   style: TextStyle(color: Colors.grey, fontSize: 18),
+                ),
+                Container(
+                  height: 32,
+                  width: 75,
+                  decoration: BoxDecoration(
+                      color: Colors.yellow,
+                      borderRadius: BorderRadius.circular(25)),
+                  child: const Center(
+                    child: Text(
+                      'Search',
+                      style: TextStyle(color: Colors.grey, fontSize: 16),
+                    ),
+                  ),
                 ),
               ],
             ),
