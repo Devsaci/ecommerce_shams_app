@@ -15,7 +15,7 @@ class HomeScreen extends StatelessWidget {
           elevation: 0,
           backgroundColor: Colors.white,
           title: const CupertinoSearchTextField(),
-          bottom:  TabBar(
+          bottom: TabBar(
             isScrollable: true,
             indicatorColor: Colors.yellow[600],
             tabs: const [
@@ -30,11 +30,17 @@ class HomeScreen extends StatelessWidget {
             ],
           ),
         ),
-        body: const TabBarView(²
+        body: const TabBarView(
           children: [
             Center(child: Text('men screen')),
             Center(child: Text('women screen')),
             Center(child: Text('shoes screen')),
+            Center(child: Text('bags screen')),
+            Center(child: Text('electronics screen')),
+            Center(child: Text('accessories screen')),
+            Center(child: Text('home and garden screen')),
+            Center(child: Text('kids screen')),
+            Center(child: Text('beauty screen')),
           ],
         ),
       ),

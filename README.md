@@ -6,3 +6,4 @@ A new Flutter project.
 
 7. Bottom Navigation Bar.
 8. Home Screen Design.
+9. Search Bar
