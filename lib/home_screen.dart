@@ -20,7 +20,11 @@ class HomeScreen extends StatelessWidget {
               border: Border.all(color: Colors.yellow, width: 1.5),
               borderRadius: BorderRadius.circular(25),
             ),
-            child: Row(),
+            child: const Row(
+              children: [
+                Icon(Icons.search, color: Colors.grey),
+              ],
+            ),
           ),
           bottom: TabBar(
             isScrollable: true,
