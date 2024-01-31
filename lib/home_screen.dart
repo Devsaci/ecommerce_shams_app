@@ -15,6 +15,7 @@ class HomeScreen extends StatelessWidget {
           elevation: 0,
           backgroundColor: Colors.white,
           title: InkWell(
+            onTap: () {},
             child: Container(
               height: 35,
               decoration: BoxDecoration(
