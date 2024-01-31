@@ -17,6 +17,7 @@ class HomeScreen extends StatelessWidget {
           title: Container(
             decoration: BoxDecoration(
               border: Border.all(color: Colors.yellow, width: 1.5),
+              borderRadius: BorderRadius.circular(25),
             ),
           ),
           bottom: TabBar(
