@@ -9,7 +9,7 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return DefaultTabController(
-      length: 3,
+      length: 9,
       child: Scaffold(
         appBar: AppBar(
           elevation: 0,
@@ -28,7 +28,7 @@ class HomeScreen extends StatelessWidget {
             ],
           ),
         ),
-        body: const TabBarView(
+        body: const TabBarView(²
           children: [
             Center(child: Text('men screen')),
             Center(child: Text('women screen')),
