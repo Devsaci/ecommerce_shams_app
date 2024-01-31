@@ -15,7 +15,9 @@ class HomeScreen extends StatelessWidget {
           elevation: 0,
           backgroundColor: Colors.white,
           title: Container(
-            decoration: const BoxDecoration(),
+            decoration: BoxDecoration(
+              border: Border.all(color: Colors.yellow, width: 1.5),
+            ),
           ),
           bottom: TabBar(
             isScrollable: true,
