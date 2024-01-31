@@ -15,7 +15,13 @@ class HomeScreen extends StatelessWidget {
           elevation: 0,
           backgroundColor: Colors.white,
           title: InkWell(
-            onTap: () {},
+            onTap: () {
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => SearchScreen(),
+                  ));
+            },
             child: Container(
               height: 35,
               decoration: BoxDecoration(
@@ -86,6 +92,8 @@ class HomeScreen extends StatelessWidget {
     );
   }
 }
+
+SearchScreen() {}
 
 class RepeatedTab extends StatelessWidget {
   final String label;
