@@ -1,6 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
+import 'minor_screens/search.dart';
+
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
   static const TextStyle optionStyle =
@@ -19,7 +21,7 @@ class HomeScreen extends StatelessWidget {
               Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => SearchScreen(),
+                    builder: (context) => const SearchScreen(),
                   ));
             },
             child: Container(
@@ -93,7 +95,7 @@ class HomeScreen extends StatelessWidget {
   }
 }
 
-SearchScreen() {}
+// SearchScreen() {}
 
 class RepeatedTab extends StatelessWidget {
   final String label;
