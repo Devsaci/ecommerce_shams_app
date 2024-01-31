@@ -14,7 +14,7 @@ class HomeScreen extends StatelessWidget {
         appBar: AppBar(
           elevation: 0,
           backgroundColor: Colors.white,
-          title: const CupertinoSearchTextField(),
+          title: Container(),
           bottom: TabBar(
             isScrollable: true,
             indicatorColor: Colors.yellow[600],
