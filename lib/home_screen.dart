@@ -20,6 +20,7 @@ class HomeScreen extends StatelessWidget {
               border: Border.all(color: Colors.yellow, width: 1.5),
               borderRadius: BorderRadius.circular(25),
             ),
+            child: Row(),
           ),
           bottom: TabBar(
             isScrollable: true,
