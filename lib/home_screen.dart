@@ -23,7 +23,11 @@ class HomeScreen extends StatelessWidget {
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                const Icon(Icons.search, color: Colors.grey),
+                const Row(
+                  children: [
+                    Icon(Icons.search, color: Colors.grey),
+                  ],
+                ),
                 const Text(
                   'What are you looking for?',
                   style: TextStyle(color: Colors.grey, fontSize: 18),
