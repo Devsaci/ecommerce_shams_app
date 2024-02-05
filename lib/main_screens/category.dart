@@ -26,7 +26,16 @@ class _CategoryScreenState extends State<CategoryScreen> {
               width: 100,
               color: Colors.red,
             ),
-          )
+          ),
+          Positioned(
+            bottom: 0,
+            right: 0,
+            child: Container(
+              height: 500,
+              width: 100,
+              color: Colors.green,
+            ),
+          ),
         ],
       ),
     );
