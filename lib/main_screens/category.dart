@@ -22,7 +22,7 @@ class _CategoryScreenState extends State<CategoryScreen> {
             bottom: 0,
             left: 0,
             child: Container(
-              height: 500,
+              height: MediaQuery.of(context).size.height * 0.8,
               width: MediaQuery.of(context).size.width * 0.2,
               color: Colors.red,
             ),
@@ -31,7 +31,7 @@ class _CategoryScreenState extends State<CategoryScreen> {
             bottom: 0,
             right: 0,
             child: Container(
-              height: 500,
+              height: MediaQuery.of(context).size.height * 0.8,
               width: MediaQuery.of(context).size.width * 0.8,
               color: Colors.green,
             ),
