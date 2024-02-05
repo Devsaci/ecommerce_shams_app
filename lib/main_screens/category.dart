@@ -11,6 +11,7 @@ class CategoryScreen extends StatefulWidget {
 class _CategoryScreenState extends State<CategoryScreen> {
   @override
   Widget build(BuildContext context) {
+    var size = MediaQuery.of(context).size;
     return Scaffold(
       appBar: AppBar(
         elevation: 0,
@@ -21,12 +22,12 @@ class _CategoryScreenState extends State<CategoryScreen> {
           Positioned(
             bottom: 0,
             left: 0,
-            child: sideNavigator(),
+            child: sideNavigator(size),
           ),
           Positioned(
             bottom: 0,
             right: 0,
-            child: categorieView(),
+            child: categorieView(size),
           ),
         ],
       ),
@@ -34,19 +35,19 @@ class _CategoryScreenState extends State<CategoryScreen> {
   }
 
 //  Widget sideNavigator
-  Widget sideNavigator() {
+  Widget sideNavigator(Size size) {
     return Container(
-      height: MediaQuery.of(context).size.height * 0.8,
-      width: MediaQuery.of(context).size.width * 0.2,
+      height: size.height * 0.8,
+      width: size.width * 0.2,
       color: Colors.grey.shade300,
     );
   }
 
 // Widget categorieView
-  Widget categorieView() {
+  Widget categorieView(Size size) {
     return Container(
-      height: MediaQuery.of(context).size.height * 0.8,
-      width: MediaQuery.of(context).size.width * 0.8,
+      height: size.height * 0.8,
+      width: size.width * 0.8,
       color: Colors.white,
     );
   }
