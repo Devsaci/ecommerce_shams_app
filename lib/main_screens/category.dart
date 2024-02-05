@@ -19,6 +19,8 @@ class _CategoryScreenState extends State<CategoryScreen> {
       body: Stack(
         children: [
           Positioned(
+            bottom: 0,
+            left: 0,
             child: Container(
               height: 500,
               width: 100,
