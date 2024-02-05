@@ -1,3 +1,4 @@
+import 'package:ecommerce_shams_app/widgets/fake_search.dart';
 import 'package:flutter/material.dart';
 
 class CategoryScreen extends StatefulWidget {
@@ -11,7 +12,9 @@ class _CategoryScreenState extends State<CategoryScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
+      appBar: AppBar(
+        title: const FakeSearch(),
+      ),
     );
   }
 }
