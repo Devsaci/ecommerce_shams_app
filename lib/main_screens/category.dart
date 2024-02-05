@@ -52,7 +52,7 @@ class _CategoryScreenState extends State<CategoryScreen> {
           return SizedBox(
             height: 100,
             child: Center(
-              child: Text(maincateg[index]),
+              child: Text(items[index].label),
             ),
           );
         },
