@@ -3,16 +3,16 @@ import 'package:flutter/material.dart';
 
 import '../utilities/categ_list.dart';
 
-List<String> items = [
-  'men',
-  'women',
-  'shoes',
-  'bags',
-  'electronics',
-  'accessories',
-  'home & garden',
-  'kids',
-  'beauty',
+List<ItemsData> items = [
+  // 'men',
+  // 'women',
+  // 'shoes',
+  // 'bags',
+  // 'electronics',
+  // 'accessories',
+  // 'home & garden',
+  // 'kids',
+  // 'beauty',
 ];
 
 class CategoryScreen extends StatefulWidget {
