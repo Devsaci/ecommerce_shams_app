@@ -17,7 +17,15 @@ class _CategoryScreenState extends State<CategoryScreen> {
         title: const FakeSearch(),
       ),
       body: Stack(
-        children: [],
+        children: [
+          Positioned(
+            child: Container(
+              height: 500,
+              width: 100,
+              color: Colors.red,
+            ),
+          )
+        ],
       ),
     );
   }
