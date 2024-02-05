@@ -16,7 +16,9 @@ class _CategoryScreenState extends State<CategoryScreen> {
         elevation: 0,
         title: const FakeSearch(),
       ),
-      body: Stack(),
+      body: Stack(
+        children: [],
+      ),
     );
   }
 }
