@@ -1,6 +1,8 @@
 import 'package:ecommerce_shams_app/widgets/fake_search.dart';
 import 'package:flutter/material.dart';
 
+import '../utilities/categ_list.dart';
+
 List<String> items = [
   'men',
   'women',
@@ -50,7 +52,7 @@ class _CategoryScreenState extends State<CategoryScreen> {
           return SizedBox(
             height: 100,
             child: Center(
-              child: Text(items[index]),
+              child: Text(maincateg[index]),
             ),
           );
         },
@@ -67,3 +69,5 @@ class _CategoryScreenState extends State<CategoryScreen> {
     );
   }
 }
+
+class ItemsData {}
