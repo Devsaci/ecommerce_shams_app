@@ -15,52 +15,7 @@ class HomeScreen extends StatelessWidget {
         appBar: AppBar(
           elevation: 0,
           backgroundColor: Colors.white,
-          title: InkWell(
-            onTap: () {
-              Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) => const SearchScreen(),
-                  ));
-            },
-            child: Container(
-              height: 35,
-              decoration: BoxDecoration(
-                border: Border.all(color: Colors.yellow, width: 1.5),
-                borderRadius: BorderRadius.circular(25),
-              ),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  const Row(
-                    children: [
-                      Padding(
-                        padding: EdgeInsets.symmetric(horizontal: 5),
-                        child: Icon(Icons.search, color: Colors.grey),
-                      ),
-                      Text(
-                        'What are you looking for?',
-                        style: TextStyle(color: Colors.grey, fontSize: 14),
-                      ),
-                    ],
-                  ),
-                  Container(
-                    height: 32,
-                    width: 75,
-                    decoration: BoxDecoration(
-                        color: Colors.yellow,
-                        borderRadius: BorderRadius.circular(25)),
-                    child: const Center(
-                      child: Text(
-                        'Search',
-                        style: TextStyle(color: Colors.grey, fontSize: 16),
-                      ),
-                    ),
-                  ),
-                ],
-              ),
-            ),
-          ),
+          title: FakeSearch(),
           bottom: TabBar(
             isScrollable: true,
             indicatorColor: Colors.yellow[600],
@@ -160,6 +115,62 @@ class HomeScreen extends StatelessWidget {
                 color: Colors.black,
               ),
             )),
+          ],
+        ),
+      ),
+    );
+  }
+}
+
+class FakeSearch extends StatelessWidget {
+  const FakeSearch({
+    super.key,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return InkWell(
+      onTap: () {
+        Navigator.push(
+            context,
+            MaterialPageRoute(
+              builder: (context) => const SearchScreen(),
+            ));
+      },
+      child: Container(
+        height: 35,
+        decoration: BoxDecoration(
+          border: Border.all(color: Colors.yellow, width: 1.5),
+          borderRadius: BorderRadius.circular(25),
+        ),
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
+            const Row(
+              children: [
+                Padding(
+                  padding: EdgeInsets.symmetric(horizontal: 5),
+                  child: Icon(Icons.search, color: Colors.grey),
+                ),
+                Text(
+                  'What are you looking for?',
+                  style: TextStyle(color: Colors.grey, fontSize: 14),
+                ),
+              ],
+            ),
+            Container(
+              height: 32,
+              width: 75,
+              decoration: BoxDecoration(
+                  color: Colors.yellow,
+                  borderRadius: BorderRadius.circular(25)),
+              child: const Center(
+                child: Text(
+                  'Search',
+                  style: TextStyle(color: Colors.grey, fontSize: 16),
+                ),
+              ),
+            ),
           ],
         ),
       ),
