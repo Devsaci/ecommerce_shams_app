@@ -7,3 +7,4 @@ A new Flutter project.
 1. 7/ Bottom Navigation Bar.
 2. 8/ Home Screen Design.
 3. 9/ Search Bar
+4. 10/ category screen [ Stack Wdiget]
