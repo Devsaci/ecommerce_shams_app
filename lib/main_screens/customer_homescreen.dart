@@ -1,3 +1,4 @@
+import 'package:ecommerce_shams_app/main_screens/category.dart';
 import 'package:ecommerce_shams_app/main_screens/home_screen.dart';
 import 'package:flutter/material.dart';
 
@@ -14,7 +15,7 @@ class _CustomerHomzscreenState extends State<CustomerHomeScreen> {
       TextStyle(fontSize: 20, fontWeight: FontWeight.bold, color: Colors.black);
   static const List<Widget> _widgetOptions = <Widget>[
     HomeScreen(),
-    Text('Index 1: Category', style: optionStyle),
+    CategoryScreen(),
     Text('Index 2: Stores', style: optionStyle),
     Text('Index 3: Cart', style: optionStyle),
     Text('Index 4: Profile', style: optionStyle),
