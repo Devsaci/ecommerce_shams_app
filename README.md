@@ -8,3 +8,4 @@ A new Flutter project.
 2. 8/ Home Screen Design.
 3. 9/ Search Bar
 4. 10/ category screen [ Stack Wdiget]
+5. 11/ Category Screen [Side Naviagtor]
