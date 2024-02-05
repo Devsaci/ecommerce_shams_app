@@ -70,4 +70,9 @@ class _CategoryScreenState extends State<CategoryScreen> {
   }
 }
 
-class ItemsData {}
+class ItemsData {
+  String label;
+  bool isSelected;
+
+  ItemsData({required this.label, this.isSelected = false});
+}
