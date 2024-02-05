@@ -45,7 +45,7 @@ class _CategoryScreenState extends State<CategoryScreen> {
       width: size.width * 0.2,
       color: Colors.grey.shade300,
       child: ListView.builder(
-        itemCount: 12,
+        itemCount: 9,
         itemBuilder: (context, index) {
           return SizedBox(
             height: 100,
