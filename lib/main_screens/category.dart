@@ -1,7 +1,17 @@
 import 'package:ecommerce_shams_app/widgets/fake_search.dart';
 import 'package:flutter/material.dart';
 
-List<String> items = [];
+List<String> items = [
+  'men',
+  'women',
+  'shoes',
+  'bags',
+  'electronics',
+  'accessories',
+  'home & garden',
+  'kids',
+  'beauty',
+];
 
 class CategoryScreen extends StatefulWidget {
   const CategoryScreen({super.key});
