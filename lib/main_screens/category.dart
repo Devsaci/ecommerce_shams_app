@@ -19,16 +19,8 @@ class _CategoryScreenState extends State<CategoryScreen> {
       ),
       body: Stack(
         children: [
-          Positioned(
-            bottom: 0,
-            left: 0,
-            child: sideNavigator(size),
-          ),
-          Positioned(
-            bottom: 0,
-            right: 0,
-            child: categorieView(size),
-          ),
+          Positioned(bottom: 0, left: 0, child: sideNavigator(size)),
+          Positioned(bottom: 0, right: 0, child: categView(size)),
         ],
       ),
     );
@@ -44,7 +36,7 @@ class _CategoryScreenState extends State<CategoryScreen> {
   }
 
 // Widget categorieView
-  Widget categorieView(Size size) {
+  Widget categView(Size size) {
     return Container(
       height: size.height * 0.8,
       width: size.width * 0.8,
