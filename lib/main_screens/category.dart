@@ -33,6 +33,7 @@ class _CategoryScreenState extends State<CategoryScreen> {
       width: size.width * 0.2,
       color: Colors.grey.shade300,
       child: ListView.builder(
+        itemCount: 12,
         itemBuilder: (context, index) {
           return Text("Men");
         },
