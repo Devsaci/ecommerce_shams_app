@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import '../utilities/categ_list.dart';
 
 List<ItemsData> items = [
+  ItemsData(label: 'men'),
   // 'men',
   // 'women',
   // 'shoes',
