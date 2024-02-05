@@ -5,15 +5,14 @@ import '../utilities/categ_list.dart';
 
 List<ItemsData> items = [
   ItemsData(label: 'men'),
-  // 'men',
-  // 'women',
-  // 'shoes',
-  // 'bags',
-  // 'electronics',
-  // 'accessories',
-  // 'home & garden',
-  // 'kids',
-  // 'beauty',
+  ItemsData(label: 'women'),
+  ItemsData(label: 'shoes'),
+  ItemsData(label: 'bags'),
+  ItemsData(label: 'electronics'),
+  ItemsData(label: 'accessories'),
+  ItemsData(label: 'home & garden'),
+  ItemsData(label: 'kids'),
+  ItemsData(label: 'beauty'),
 ];
 
 class CategoryScreen extends StatefulWidget {
