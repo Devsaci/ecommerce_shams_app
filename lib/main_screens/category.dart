@@ -21,11 +21,7 @@ class _CategoryScreenState extends State<CategoryScreen> {
           Positioned(
             bottom: 0,
             left: 0,
-            child: Container(
-              height: MediaQuery.of(context).size.height * 0.8,
-              width: MediaQuery.of(context).size.width * 0.2,
-              color: Colors.grey.shade300,
-            ),
+            child: sideNavigator(),
           ),
           Positioned(
             bottom: 0,
@@ -38,6 +34,14 @@ class _CategoryScreenState extends State<CategoryScreen> {
           ),
         ],
       ),
+    );
+  }
+
+  Widget sideNavigator() {
+    return Container(
+      height: MediaQuery.of(context).size.height * 0.8,
+      width: MediaQuery.of(context).size.width * 0.2,
+      color: Colors.grey.shade300,
     );
   }
 }
