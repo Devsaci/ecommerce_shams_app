@@ -35,7 +35,7 @@ class _CategoryScreenState extends State<CategoryScreen> {
       child: ListView.builder(
         itemCount: 12,
         itemBuilder: (context, index) {
-          return Text("Men");
+          return const SizedBox(height: 100, child: Center(child: Text("Men")));
         },
       ),
     );
