@@ -9,3 +9,4 @@ A new Flutter project.
 3. 9/ Search Bar
 4. 10/ category screen [ Stack Wdiget]
 5. 11/ Category Screen [Side Naviagtor]
+6. 12/ Category Screen [category view]
