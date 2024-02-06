@@ -56,7 +56,9 @@ class _CategoryScreenState extends State<CategoryScreen> {
               });
             },
             child: Container(
-              color: Colors.grey.shade300,
+              color: items[index].isSelected == true
+                  ? Colors.white
+                  : Colors.grey.shade300,
               height: 100,
               child: Center(
                 child: Text(items[index].label),
