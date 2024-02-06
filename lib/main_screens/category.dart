@@ -42,14 +42,15 @@ class _CategoryScreenState extends State<CategoryScreen> {
 
 //  Widget sideNavigator
   Widget sideNavigator(Size size) {
-    return Container(
+    return SizedBox(
       height: size.height * 0.8,
       width: size.width * 0.2,
-      color: Colors.grey.shade300,
+      //color: Colors.grey.shade300,
       child: ListView.builder(
         itemCount: items.length,
         itemBuilder: (context, index) {
-          return SizedBox(
+          return Container(
+            color: Colors.grey.shade300,
             height: 100,
             child: Center(
               child: Text(items[index].label),
