@@ -1,8 +1,6 @@
 import 'package:ecommerce_shams_app/widgets/fake_search.dart';
 import 'package:flutter/material.dart';
 
-import '../utilities/categ_list.dart';
-
 List<ItemsData> items = [
   ItemsData(label: 'men'),
   ItemsData(label: 'women'),
@@ -79,6 +77,7 @@ class _CategoryScreenState extends State<CategoryScreen> {
       height: size.height * 0.8,
       width: size.width * 0.8,
       color: Colors.white,
+      child: PageView(),
     );
   }
 }
