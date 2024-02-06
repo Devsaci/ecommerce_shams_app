@@ -94,6 +94,9 @@ class _CategoryScreenState extends State<CategoryScreen> {
           Center(child: Text("BagsCategory")),
           Center(child: Text("ElectronicsCategory")),
           Center(child: Text("AccessoriesCategory")),
+          Center(child: Text("HomeGardenCategory")),
+          Center(child: Text("KidsCategory")),
+          Center(child: Text("BeautyCategory")),
         ],
       ),
     );
