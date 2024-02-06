@@ -78,7 +78,14 @@ class _CategoryScreenState extends State<CategoryScreen> {
       width: size.width * 0.8,
       color: Colors.white,
       child: PageView(
-        onPageChanged: (value) {},
+        onPageChanged: (value) {
+          for (var element in items) {
+            element.isSelected = false;
+          }
+          setState(() {
+            items[value].isSelected = true;
+          });
+        },
         scrollDirection: Axis.vertical,
         children: const [
           Center(child: Text("MenCategory")),
