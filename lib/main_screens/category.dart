@@ -49,11 +49,13 @@ class _CategoryScreenState extends State<CategoryScreen> {
       child: ListView.builder(
         itemCount: items.length,
         itemBuilder: (context, index) {
-          return Container(
-            color: Colors.grey.shade300,
-            height: 100,
-            child: Center(
-              child: Text(items[index].label),
+          return GestureDetector(
+            child: Container(
+              color: Colors.grey.shade300,
+              height: 100,
+              child: Center(
+                child: Text(items[index].label),
+              ),
             ),
           );
         },
