@@ -78,10 +78,13 @@ class _CategoryScreenState extends State<CategoryScreen> {
       width: size.width * 0.8,
       color: Colors.white,
       child: PageView(
-        children: [
-          Center(
-            child: Text("Men Category"),
-          )
+        children: const [
+          Center(child: Text("MenCategory")),
+          Center(child: Text("WomenCategory")),
+          Center(child: Text("ShoesCategory")),
+          Center(child: Text("BagsCategory")),
+          Center(child: Text("ElectronicsCategory")),
+          Center(child: Text("AccessoriesCategory")),
         ],
       ),
     );
