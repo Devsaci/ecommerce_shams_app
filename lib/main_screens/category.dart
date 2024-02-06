@@ -50,6 +50,7 @@ class _CategoryScreenState extends State<CategoryScreen> {
         itemCount: items.length,
         itemBuilder: (context, index) {
           return GestureDetector(
+            onTap: () {},
             child: Container(
               color: Colors.grey.shade300,
               height: 100,
