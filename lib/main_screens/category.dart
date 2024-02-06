@@ -51,6 +51,7 @@ class _CategoryScreenState extends State<CategoryScreen> {
         itemBuilder: (context, index) {
           return GestureDetector(
             onTap: () {
+              for (var element in items) {}
               setState(() {
                 items[index].isSelected = true;
               });
