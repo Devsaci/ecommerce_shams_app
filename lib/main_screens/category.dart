@@ -21,6 +21,7 @@ class CategoryScreen extends StatefulWidget {
 }
 
 class _CategoryScreenState extends State<CategoryScreen> {
+  final PageController _pageController = PageController();
   @override
   Widget build(BuildContext context) {
     var size = MediaQuery.of(context).size;
@@ -78,6 +79,7 @@ class _CategoryScreenState extends State<CategoryScreen> {
       width: size.width * 0.8,
       color: Colors.white,
       child: PageView(
+        controller: _pageController,
         onPageChanged: (value) {
           for (var element in items) {
             element.isSelected = false;
