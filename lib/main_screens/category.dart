@@ -77,7 +77,13 @@ class _CategoryScreenState extends State<CategoryScreen> {
       height: size.height * 0.8,
       width: size.width * 0.8,
       color: Colors.white,
-      child: PageView(),
+      child: PageView(
+        children: [
+          Center(
+            child: Text("Men Category"),
+          )
+        ],
+      ),
     );
   }
 }
