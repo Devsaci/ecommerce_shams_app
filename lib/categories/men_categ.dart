@@ -24,6 +24,7 @@ class MenCategory extends StatelessWidget {
           child: GridView.count(
             crossAxisCount: 3,
             mainAxisSpacing: 70,
+            crossAxisSpacing: 15,
             children: List.generate(4, (index) {
               return Container(
                 color: Colors.black45,
