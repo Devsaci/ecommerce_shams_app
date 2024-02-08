@@ -1,3 +1,4 @@
+import 'package:ecommerce_shams_app/categories/men_categ.dart';
 import 'package:ecommerce_shams_app/widgets/fake_search.dart';
 import 'package:flutter/material.dart';
 
@@ -107,7 +108,8 @@ class _CategoryScreenState extends State<CategoryScreen> {
         },
         scrollDirection: Axis.vertical,
         children: const [
-          Center(child: Text("MenCategory")),
+          //Center(child: Text("MenCategory")),
+          MenCategory(),
           Center(child: Text("WomenCategory")),
           Center(child: Text("ShoesCategory")),
           Center(child: Text("BagsCategory")),
