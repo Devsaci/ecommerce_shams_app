@@ -6,6 +6,7 @@ class MenCategory extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
       // color: Colors.red,
       children: [
         Text(
