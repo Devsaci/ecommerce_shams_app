@@ -5,8 +5,18 @@ class MenCategory extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      color: Colors.red,
+    return const Column(
+      // color: Colors.red,
+      children: [
+        Text(
+          "Men",
+          style: TextStyle(
+            fontSize: 24,
+            letterSpacing: 1.5,
+            color: Colors.black,
+          ),
+        ),
+      ],
     );
   }
 }
