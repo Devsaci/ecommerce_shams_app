@@ -5,10 +5,10 @@ class MenCategory extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Column(
+    return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Padding(
+        const Padding(
           padding: EdgeInsets.all(30.0),
           child: Text(
             "Men",
@@ -18,6 +18,10 @@ class MenCategory extends StatelessWidget {
               color: Colors.black,
             ),
           ),
+        ),
+        SizedBox(
+          height: MediaQuery.of(context).size.height * 0.60,
+          child: GridView.count(crossAxisCount: 3),
         ),
       ],
     );
