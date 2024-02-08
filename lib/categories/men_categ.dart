@@ -21,7 +21,10 @@ class MenCategory extends StatelessWidget {
         ),
         SizedBox(
           height: MediaQuery.of(context).size.height * 0.60,
-          child: GridView.count(crossAxisCount: 3),
+          child: GridView.count(
+            crossAxisCount: 3,
+            children: [],
+          ),
         ),
       ],
     );
