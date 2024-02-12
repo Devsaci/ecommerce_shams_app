@@ -65,8 +65,8 @@ class _CategoryScreenState extends State<CategoryScreen> {
             onTap: () {
               _pageController.animateToPage(
                 index,
-                duration: const Duration(milliseconds: 1000),
-                curve: Curves.easeInCirc,
+                duration: const Duration(milliseconds: 600),
+                curve: Curves.linear,
               );
               // for (var element in items) {
               //   element.isSelected = false;
