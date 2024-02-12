@@ -1,5 +1,11 @@
 import 'package:flutter/material.dart';
 
+List<String> labelTry = [
+  "shirt",
+  "jeans",
+  "SHOSES",
+  "jacket",
+];
 List<String> imageTry = [
   "images/try/image0.jpg",
   "images/try/image1.jpg",
@@ -33,11 +39,17 @@ class MenCategory extends StatelessWidget {
             mainAxisSpacing: 70,
             crossAxisSpacing: 15,
             children: List.generate(4, (index) {
-              return SizedBox(
-                //color: Colors.black45,
-                height: 70,
-                width: 70,
-                child: Image(image: AssetImage("images/try/image$index.jpg")),
+              return Column(
+                children: [
+                  SizedBox(
+                    //color: Colors.black45,
+                    height: 70,
+                    width: 70,
+                    child:
+                        Image(image: AssetImage("images/try/image$index.jpg")),
+                  ),
+                  Text("data"),
+                ],
               );
             }),
           ),
