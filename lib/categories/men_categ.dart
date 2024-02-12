@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+List<String> imageTry = [];
+
 class MenCategory extends StatelessWidget {
   const MenCategory({super.key});
 
