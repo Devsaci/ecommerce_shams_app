@@ -1,3 +1,4 @@
+import 'package:ecommerce_shams_app/utilities/categ_list.dart';
 import 'package:flutter/material.dart';
 
 List<String> labelTry = [
@@ -38,17 +39,16 @@ class MenCategory extends StatelessWidget {
             crossAxisCount: 3,
             mainAxisSpacing: 70,
             crossAxisSpacing: 15,
-            children: List.generate(4, (index) {
+            children: List.generate(men.length, (index) {
               return Column(
                 children: [
                   SizedBox(
                     //color: Colors.black45,
                     height: 70,
                     width: 70,
-                    child:
-                        Image(image: AssetImage("images/try/image$index.jpg")),
+                    child: Image(image: AssetImage("images/men/men$index.jpg")),
                   ),
-                  Text("data"),
+                  Text(men[index]),
                 ],
               );
             }),
