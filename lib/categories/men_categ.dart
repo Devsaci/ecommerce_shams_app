@@ -37,7 +37,7 @@ class MenCategory extends StatelessWidget {
                 //color: Colors.black45,
                 height: 70,
                 width: 70,
-                child: Image(image: AssetImage(imageTry[index])),
+                child: Image(image: AssetImage("images/try/image$index.jpg")),
               );
             }),
           ),
