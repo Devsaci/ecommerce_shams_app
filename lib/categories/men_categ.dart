@@ -26,10 +26,11 @@ class MenCategory extends StatelessWidget {
             mainAxisSpacing: 70,
             crossAxisSpacing: 15,
             children: List.generate(4, (index) {
-              return Container(
-                color: Colors.black45,
+              return const SizedBox(
+                //color: Colors.black45,
                 height: 70,
                 width: 70,
+                child: Image(image: AssetImage("images/try/image1.jpg")),
               );
             }),
           ),
