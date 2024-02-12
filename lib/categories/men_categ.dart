@@ -1,6 +1,11 @@
 import 'package:flutter/material.dart';
 
-List<String> imageTry = [];
+List<String> imageTry = [
+  "images/try/image0.jpg",
+  "images/try/image1.jpg",
+  "images/try/image2.jpg",
+  "images/try/image3.jpg"
+];
 
 class MenCategory extends StatelessWidget {
   const MenCategory({super.key});
