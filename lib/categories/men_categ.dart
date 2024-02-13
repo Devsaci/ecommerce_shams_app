@@ -28,7 +28,13 @@ class MenCategory extends StatelessWidget {
             crossAxisSpacing: 15,
             children: List.generate(men.length, (index) {
               return GestureDetector(
-                onTap: () {},
+                onTap: () {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => Text("SubcategProducts"),
+                      ));
+                },
                 child: Column(
                   children: [
                     SizedBox(
