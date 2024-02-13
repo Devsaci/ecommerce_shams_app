@@ -34,9 +34,9 @@ class MenCategory extends StatelessWidget {
                   Navigator.push(
                     context,
                     MaterialPageRoute(
-                      builder: (context) => const SubcategProducts(
+                      builder: (context) => SubcategProducts(
                         mainCategName: 'mainCategName',
-                        subCategName: 'subCategName',
+                        subCategName: men[index],
                       ),
                     ),
                   );
