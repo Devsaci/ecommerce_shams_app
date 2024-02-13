@@ -28,6 +28,7 @@ class MenCategory extends StatelessWidget {
             crossAxisSpacing: 15,
             children: List.generate(men.length, (index) {
               return GestureDetector(
+                onTap: () {},
                 child: Column(
                   children: [
                     SizedBox(
