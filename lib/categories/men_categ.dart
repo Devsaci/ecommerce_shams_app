@@ -1,6 +1,8 @@
 import 'package:ecommerce_shams_app/utilities/categ_list.dart';
 import 'package:flutter/material.dart';
 
+import '../minor_screens/subcateg_products.dart';
+
 class MenCategory extends StatelessWidget {
   const MenCategory({super.key});
 
@@ -30,10 +32,11 @@ class MenCategory extends StatelessWidget {
               return GestureDetector(
                 onTap: () {
                   Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                        builder: (context) => Text("SubcategProducts"),
-                      ));
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => const SubcategProducts(),
+                    ),
+                  );
                 },
                 child: Column(
                   children: [
