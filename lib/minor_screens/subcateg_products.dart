@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 
 class SubcategProducts extends StatelessWidget {
-  const SubcategProducts({super.key});
+  final String mainCategName;
+  const SubcategProducts({super.key, required this.mainCategName});
 
   @override
   Widget build(BuildContext context) {
