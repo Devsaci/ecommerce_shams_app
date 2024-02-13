@@ -13,8 +13,9 @@ class SubcategProducts extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("subCategName"),
+        title: Text(subCategName),
       ),
+      body: Center(child: Text(mainCategName)),
     );
   }
 }
