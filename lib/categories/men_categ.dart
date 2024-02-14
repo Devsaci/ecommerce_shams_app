@@ -8,64 +8,68 @@ class MenCategory extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Positioned(
-      bottom: 0,
-      top: 0,
-      child: SizedBox(
-        height: MediaQuery.of(context).size.height * 0.8,
-        width: MediaQuery.of(context).size.height * 0.75,
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            const Padding(
-              padding: EdgeInsets.all(30.0),
-              child: Text(
-                "Men",
-                style: TextStyle(
-                  fontSize: 24,
-                  letterSpacing: 1.5,
-                  color: Colors.black,
+    return Stack(
+      children: [
+        Positioned(
+          bottom: 0,
+          top: 0,
+          child: SizedBox(
+            height: MediaQuery.of(context).size.height * 0.8,
+            width: MediaQuery.of(context).size.height * 0.75,
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                const Padding(
+                  padding: EdgeInsets.all(30.0),
+                  child: Text(
+                    "Men",
+                    style: TextStyle(
+                      fontSize: 24,
+                      letterSpacing: 1.5,
+                      color: Colors.black,
+                    ),
+                  ),
                 ),
-              ),
-            ),
-            SizedBox(
-              height: MediaQuery.of(context).size.height * 0.60,
-              child: GridView.count(
-                crossAxisCount: 3,
-                mainAxisSpacing: 70,
-                crossAxisSpacing: 15,
-                children: List.generate(men.length, (index) {
-                  return GestureDetector(
-                    onTap: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                          builder: (context) => SubcategProducts(
-                            mainCategName: 'men',
-                            subCategName: men[index],
-                          ),
+                SizedBox(
+                  height: MediaQuery.of(context).size.height * 0.60,
+                  child: GridView.count(
+                    crossAxisCount: 3,
+                    mainAxisSpacing: 70,
+                    crossAxisSpacing: 15,
+                    children: List.generate(men.length, (index) {
+                      return GestureDetector(
+                        onTap: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => SubcategProducts(
+                                mainCategName: 'men',
+                                subCategName: men[index],
+                              ),
+                            ),
+                          );
+                        },
+                        child: Column(
+                          children: [
+                            SizedBox(
+                              height: 70,
+                              width: 70,
+                              child: Image(
+                                image: AssetImage("images/men/men$index.jpg"),
+                              ),
+                            ),
+                            Text(men[index]),
+                          ],
                         ),
                       );
-                    },
-                    child: Column(
-                      children: [
-                        SizedBox(
-                          height: 70,
-                          width: 70,
-                          child: Image(
-                            image: AssetImage("images/men/men$index.jpg"),
-                          ),
-                        ),
-                        Text(men[index]),
-                      ],
-                    ),
-                  );
-                }),
-              ),
+                    }),
+                  ),
+                ),
+              ],
             ),
-          ],
+          ),
         ),
-      ),
+      ],
     );
   }
 }
