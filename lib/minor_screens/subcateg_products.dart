@@ -14,6 +14,7 @@ class SubcategProducts extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         elevation: 10,
+        backgroundColor: const Color.fromARGB(96, 225, 139, 139),
         leading: IconButton(
           onPressed: () {
             Navigator.pop(context);
