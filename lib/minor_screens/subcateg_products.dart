@@ -13,6 +13,14 @@ class SubcategProducts extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        elevation: 10,
+        leading: IconButton(
+          onPressed: () {},
+          icon: const Icon(
+            Icons.arrow_back_ios_new,
+            color: Colors.black,
+          ),
+        ),
         title: Text(subCategName),
       ),
       body: Center(child: Text(mainCategName)),
