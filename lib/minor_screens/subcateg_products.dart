@@ -13,6 +13,7 @@ class SubcategProducts extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        centerTitle: true,
         elevation: 10,
         backgroundColor: const Color.fromARGB(96, 225, 139, 139),
         leading: IconButton(
