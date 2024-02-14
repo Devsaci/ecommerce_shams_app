@@ -24,7 +24,10 @@ class SubcategProducts extends StatelessWidget {
             color: Colors.black,
           ),
         ),
-        title: Text(subCategName),
+        title: Text(
+          subCategName,
+          style: const TextStyle(color: Colors.black),
+        ),
       ),
       body: Center(child: Text(mainCategName)),
     );
