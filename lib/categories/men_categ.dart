@@ -69,6 +69,9 @@ class MenCategory extends StatelessWidget {
             ),
           ),
         ),
+        Positioned(
+          child: SizedBox(),
+        )
       ],
     );
   }
