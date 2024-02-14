@@ -76,6 +76,11 @@ class MenCategory extends StatelessWidget {
           child: SizedBox(
             height: MediaQuery.of(context).size.height * 0.8,
             width: MediaQuery.of(context).size.height * 0.2,
+            child: Container(
+              decoration: BoxDecoration(
+                color: Colors.brown.withOpacity(0.2),
+              ),
+            ),
           ),
         )
       ],
