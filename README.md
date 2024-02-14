@@ -12,3 +12,4 @@ A new Flutter project.
 6. 12/ Category Screen [category view]
 7. 13/ Category Screen [grid view]
 flutter pub get. flutter pub outdated. flutter pub upgrade --major-versions.
+8. 15/ Adding SliderBar
