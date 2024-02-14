@@ -12,7 +12,7 @@ class MenCategory extends StatelessWidget {
       children: [
         Positioned(
           bottom: 0,
-          top: 0,
+          left: 0,
           child: SizedBox(
             height: MediaQuery.of(context).size.height * 0.8,
             width: MediaQuery.of(context).size.height * 0.75,
