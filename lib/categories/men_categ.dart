@@ -1,5 +1,6 @@
 import 'package:ecommerce_shams_app/utilities/categ_list.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 
 import '../minor_screens/subcateg_products.dart';
 
@@ -20,7 +21,7 @@ class MenCategory extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 const Padding(
-                  padding: EdgeInsets.all(30.0),
+                  padding: EdgeInsets.all(20.0),
                   child: Text(
                     "Men",
                     style: TextStyle(
@@ -52,7 +53,7 @@ class MenCategory extends StatelessWidget {
                         child: Column(
                           children: [
                             SizedBox(
-                              height: 70,
+                              height: 40,
                               width: 70,
                               child: Image(
                                 image: AssetImage("images/men/men$index.jpg"),
@@ -70,7 +71,12 @@ class MenCategory extends StatelessWidget {
           ),
         ),
         Positioned(
-          child: SizedBox(),
+          bottom: 0,
+          right: 0,
+          child: SizedBox(
+            height: MediaQuery.of(context).size.height * 0.8,
+            width: MediaQuery.of(context).size.height * 0.2,
+          ),
         )
       ],
     );
